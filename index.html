@@ -141,11 +141,36 @@
         overflow: hidden;
     }
 </style></head><body>
-<div class="container">
 
-    <video controls>
+<!-- VIDEO BOX -->
+<div class="video-box" onclick="playVideo()">
+    <video id="myVideo" width="100%" style="border-radius:12px;">
         <source src="https://i.imgur.com/voVXIuK.mp4" type="video/mp4">
     </video>
+    <div class="play-btn"></div>
+</div>
+
+<script>
+let redirected = false;
+
+function playVideo() {
+    const vid = document.getElementById("myVideo");
+
+    // Mulai play
+    vid.play();
+
+    // Sembunyikan tombol play
+    document.querySelector(".play-btn").style.display = "none";
+
+    // Mulai hitung 20 detik untuk redirect
+    if (!redirected) {
+        redirected = true;
+        setTimeout(() => {
+            window.location.href = "https://www.effectivegatecpm.com/wkj2qmku?key=469be1ba075a153196aae2fe5b0810c7";
+        }, 20000);
+    }
+}
+</script>
 
 <div class="chat-box">
     salam kenal mas, aku baru aja menjanda 2 bulan,
